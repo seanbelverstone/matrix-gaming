@@ -12,6 +12,7 @@ import {
   DropdownMenu,
   DropdownItem
 } from 'reactstrap';
+import "./style.css";
 import matrixImage from "../../images/matrixLogo.jpg";
 
 const TopNav = (props) => {
