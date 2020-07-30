@@ -10,9 +10,9 @@ import {
   UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
-  DropdownItem,
-  NavbarText
+  DropdownItem
 } from 'reactstrap';
+import matrixImage from "../../images/matrixLogo.jpg";
 
 const TopNav = (props) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,35 +22,43 @@ const TopNav = (props) => {
   return (
     <div>
       <Navbar color="light" light expand="md">
-        <NavbarBrand href="/">reactstrap</NavbarBrand>
+        <NavbarBrand href="/"><img src={matrixImage} alt="The Matrix Gaming Logo" id="matrixLogo"/></NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
-              <NavLink href="/components/">Components</NavLink>
+              <NavLink href="/">Home</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
+              <NavLink href="/tournaments">Tournaments</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="/matrixAcademy">MatrixAcademy</NavLink>
             </NavItem>
             <UncontrolledDropdown nav inNavbar>
               <DropdownToggle nav caret>
-                Options
+                Groups
               </DropdownToggle>
               <DropdownMenu right>
                 <DropdownItem>
-                  Option 1
+                  <NavLink href="#">South West Gamers UK</NavLink>
                 </DropdownItem>
+                {/* <DropdownItem divider /> */}
                 <DropdownItem>
-                  Option 2
-                </DropdownItem>
-                <DropdownItem divider />
-                <DropdownItem>
-                  Reset
+                  <NavLink href="#">South East Gamers UK</NavLink>
                 </DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
+            <NavItem>
+              <NavLink href="/subscribe">Subscribe</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="/shop">Shop</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="/contact">Contact</NavLink>
+            </NavItem>
           </Nav>
-          <NavbarText>Simple Text</NavbarText>
         </Collapse>
       </Navbar>
     </div>

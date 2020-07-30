@@ -19,14 +19,14 @@ class App extends Component {
       <Router>
         <div>
           <TopNav />
-          {/* <Switch>
+          <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/tournaments" component={Tournaments} />
             <Route path="/matrixAcademy"component={MatrixAcademy} />
             <Route path="/subscribe" component={Subscribe} />
             <Route path="/shop" component={Shop} />
             <Route path="/contact" component={Contact} />
-          </Switch> */}
+          </Switch>
         </div>
       </Router>
     );
