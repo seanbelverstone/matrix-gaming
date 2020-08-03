@@ -7,7 +7,7 @@ class Home extends Component {
 	render() {
 		return (
 			<div className="container" id="videoContainer">				
-				<video id="homeVideo" src={matrixVid} autoPlay loop/>
+				<video id="homeVideo" src={matrixVid} autoPlay="true" loop="true"/>
 			</div>
 		  );
 	}
