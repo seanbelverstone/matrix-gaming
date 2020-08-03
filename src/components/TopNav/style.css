@@ -37,3 +37,8 @@ li {
 .dropdown-toggle::after {
 	color: lightskyblue;
 }
+
+.dropdown-menu {
+    background-color: black;
+    border: 2px lightskyblue solid;
+}
