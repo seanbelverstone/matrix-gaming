@@ -22,7 +22,7 @@ const TopNav = (props) => {
 
   return (
     <div>
-      <Navbar color="light" light expand="md">
+      <Navbar light expand="md">
         <NavbarBrand href="/"><img src={matrixImage} alt="The Matrix Gaming Logo" id="matrixLogo"/></NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
