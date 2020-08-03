@@ -1,0 +1,12 @@
+#videoContainer {
+	text-align: center;
+}
+
+#homeVideo {
+	min-width: 50%;
+	width: 1000px;
+	height: auto;
+	padding-top: 5%;
+	display: inline-block;
+	border: none;
+}
