@@ -14,6 +14,7 @@ import {
 } from 'reactstrap';
 import "./style.css";
 import matrixImage from "../../images/matrixLogo.jpg";
+import whiteBurger from "../../images/whiteBurger.jpg";
 
 const TopNav = (props) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,9 +23,9 @@ const TopNav = (props) => {
 
   return (
     <div>
-      <Navbar color="light" light expand="md">
+      <Navbar dark expand="md">
         <NavbarBrand href="/"><img src={matrixImage} alt="The Matrix Gaming Logo" id="matrixLogo"/></NavbarBrand>
-        <NavbarToggler onClick={toggle} />
+        <NavbarToggler onClick={toggle}/>
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
