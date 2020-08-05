@@ -14,7 +14,6 @@ import {
 } from 'reactstrap';
 import "./style.css";
 import matrixImage from "../../images/matrixLogo.jpg";
-import whiteBurger from "../../images/whiteBurger.jpg";
 
 const TopNav = (props) => {
   const [isOpen, setIsOpen] = useState(false);
