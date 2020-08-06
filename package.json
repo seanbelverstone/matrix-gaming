@@ -1,0 +1,45 @@
+{
+  "name": "matrix-gaming",
+  "version": "1.0.0",
+  "description": "",
+  "engines": {
+    "node": "v13.12.0"
+  },
+  "main": "server.js",
+  "scripts": {
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:prod": "node -r esm server.js",
+    "start:dev": "concurrently \"nodemon -r esm --ignore 'client/*'\" \"npm run client\"",
+    "client": "cd client && npm run start",
+    "seed": "node scripts/seedDB.js",
+    "install": "cd client && npm install",
+    "build": "cd client && npm run build",
+    "heroku-postbuild": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seanbelverstone/matrix-gaming.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^5.0.0",
+    "nodemon": "^1.18.7"
+  },
+  "bugs": {
+    "url": "https://github.com/seanbelverstone/matrix-gaming/issues"
+  },
+  "homepage": "https://github.com/seanbelverstone/matrix-gaming#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.1",
+    "dotenv": "^8.2.0",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "if-env": "^1.0.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0",
+    "reactstrap": "^8.5.1"
+  }
+}
