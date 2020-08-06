@@ -30,7 +30,7 @@ li {
     color: white !important;
 }
 
-.nav-link:hover {
+.nav-link:hover, a:hover {
 	color: lightskyblue !important;
 }
 

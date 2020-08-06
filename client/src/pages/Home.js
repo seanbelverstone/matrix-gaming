@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import "./style.css";
+import "./styles/Home.css";
 import matrixVid from "../videos/matrixVid.mp4";
 
 class Home extends Component {
